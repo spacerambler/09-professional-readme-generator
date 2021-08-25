@@ -19,22 +19,22 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'installation instructions',
+        name: 'installation-instructions',
         message: 'Provide installation instructions:',
     },
     {
         type: 'input',
-        name: 'usage information',
+        name: 'usage-information',
         message: 'Provide usage information:',
     },
     {
         type: 'input',
-        name: 'contribution guidelines',
+        name: 'contribution-guidelines',
         message: 'Provide contribution guidelines:',
     },
     {
         type: 'input',
-        name: 'test instructions',
+        name: 'test-instructions',
         message: 'Provide test instructions:',
     },
     {
@@ -44,12 +44,12 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'github username',
+        name: 'github-username',
         message: 'What is your GitHub username?',
     },
     {
         type: 'input',
-        name: 'email address',
+        name: 'email-address',
         message: 'What is your email address?',
     },
 ];
@@ -57,7 +57,40 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(README, data) {
     `
-    #${}
+    # ${answers.title}
+
+## Table of Contents
+*[Description](#header-description)
+*[Installation](#header-installation)
+*[Usage](#header-usage)
+*[License](#header-license)
+*[Contributing](#header-contributing)
+*[Tests](#header-tests)
+*[Questions](#header-questions)
+
+## <a id="header-description"></a>Description
+${answers.description}
+
+## <a id="header-installation"></a>Installation
+${answers.installation-instructions}
+
+## <a id="header-usage"></a>Usage
+${answers.usage-information}
+
+## <a id="header-license"></a>License
+${answers.license}
+
+## <a id="header-contributing"></a>Contributing
+${answers.contribution-guidelines}
+
+## <a id="header-tests"></a>Tests
+${answers.test-instructions}
+
+## <a id="header-questions"></a>Questions
+
+[Check me out on Github](https://github.com/${answers.github-username})
+[Email Me](mailto:${answers.email-address})
+
     `
 }
 
