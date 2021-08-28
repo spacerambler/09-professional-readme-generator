@@ -1,3 +1,6 @@
+The following readme file was generated using the command line function created in this repo. Here is the [walkthrough video](https://www.loom.com/share/7f77be3a41d3400eb63e75afc6bd775c) that explains how the application works. 
+
+[Github Repo](https://github.com/spacerambler/09-professional-readme-generator)
 
   # Myspace
 
