@@ -67,7 +67,7 @@ function init() {
       if (err) {
         console.error(err);
       } else {
-        console.log("Successfully wrote to README.txt");
+        console.log("Successfully wrote to README.md");
       }
     })
   );

@@ -17,12 +17,19 @@ function generateMarkdown(answers) {
 
 ## Table of Contents
 *[Description](#header-description)
+<br>
 *[Installation](#header-installation)
+<br>
 *[Usage](#header-usage)
+<br>
 *[License](#header-license)
+<br>
 *[Contributing](#header-contributing)
+<br>
 *[Tests](#header-tests)
+<br>
 *[Questions](#header-questions)
+<br>
 
 ## <a id="header-description"></a>Description
 ${answers.description}
@@ -43,8 +50,9 @@ ${answers.contribution}
 ${answers.test}
 
 ## <a id="header-questions"></a>Questions
-
+<br>
 [Check me out on Github](https://github.com/${answers.github})
+<br>
 [Email Me](mailto:${answers.email})
 
 `;
